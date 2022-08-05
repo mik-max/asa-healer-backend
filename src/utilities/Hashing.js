@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt'
-export function encrypt (password: string){
+export function encrypt (password){
      bcrypt.genSalt(10, (err, salt) => {
           if(err){
                console.error(err)
@@ -16,7 +16,7 @@ export function encrypt (password: string){
      })
 }
 
-export function compareHash (password:string, passwordHash: string){
+export function compareHash (password, passwordHash){
      bcrypt.compare(password, passwordHash, (err, res) => {
           if(err){
                console.error(err)

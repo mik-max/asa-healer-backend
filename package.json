@@ -5,7 +5,10 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "Jest"
+    "test": "Jest",
+    "start": "node server.js",
+    "start:dev": "nodemon"
+    
   },
   "keywords": [
     "NodeJs",
